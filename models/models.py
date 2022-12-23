@@ -8,7 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base, declared_attr
 from sqlalchemy.orm import relationship
 
 
-JWT_SECRET = os.getenv('JWT_SECRET', 'jwt-secret')
+JWT_SECRET = '0839942409BCFFF12C92AF8C66BF5BD06086F423C361D7C36BA8CB2CFBFCD8EF'
 
 
 class Base(object):
