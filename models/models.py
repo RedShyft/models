@@ -115,6 +115,7 @@ class Message(Base):
     redditor_id = Column(String, index=True)
     redditor_name = Column(String)
     resource_uri = Column(String(500))
+    title = Column(String)
 
     campaign = relationship("Campaign", backref="messages")
     subreddit = relationship("Subreddit", backref="messages", lazy=True)
