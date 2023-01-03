@@ -30,7 +30,7 @@ class Account(Base):
     password = Column(String, nullable=False)
 
     active = Column(Boolean, default=True)
-    plan = Column(String)
+    plan = Column(String, default='basic')
     stripe_customer_id = Column(String)
     stripe_sub_id = Column(String)
 
