@@ -69,6 +69,9 @@ class RedditUser(Base):
     account_id = Column(Integer, ForeignKey("account.id"))
     active = Column(Boolean, default=True)
     eligible = Column(Boolean)
+    suspended = Column(Boolean)
+    email_verified = Column(Boolean)
+    
     user_agent = Column(String)
     username = Column(String)
     refresh_token = Column(String)
