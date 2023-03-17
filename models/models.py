@@ -33,6 +33,8 @@ class Account(Base):
     plan = Column(String, default='basic')
     stripe_customer_id = Column(String)
     stripe_sub_id = Column(String)
+    stripe_sub_status = Column(String)
+    stripe_product_id = Column(String)
 
     created_at = Column(
         DateTime, default=datetime.datetime.utcnow, nullable=False)
