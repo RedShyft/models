@@ -74,6 +74,7 @@ class RedditUser(Base):
     suspended = Column(Boolean)
     email_verified = Column(Boolean)
     karma = Column(Integer)
+    reauthorize = Column(Boolean)
     
     user_agent = Column(String)
     username = Column(String)
