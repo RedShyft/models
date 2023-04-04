@@ -45,6 +45,8 @@ class Account(Base):
             'email': self.email,
             'active': self.active,
             'plan': self.plan,
+            'stripe_sub_status': self.stripe_sub_status,
+            'stripe_product_id': self.stripe_product_id,
             'created_at': self.created_at,
             'reddit_accounts': self.reddit_users
         }
